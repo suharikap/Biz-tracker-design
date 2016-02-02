@@ -11,23 +11,22 @@
 		<header class="mdl-layout__header">
 			<div class="mdl-layout__header-row">
 				<!-- Title -->
-				<span class="mdl-layout-title">Distribution App</span>
+				<span class="mdl-layout-title">Biz Tracker</span>
 				<!-- Add spacer, to align navigation to the right -->
 				<div class="mdl-layout-spacer"></div>
 				<!-- Navigation. We hide it in small screens. -->
-				<nav class="mdl-navigation mdl-layout--large-screen-only">      
-		  <a class="mdl-navigation__link" href="./dashBoard_new.html">DashBoard New</a>
-          <a class="mdl-navigation__link" href="./DashBoard.html">DashBoard Old</a> 
-          <a class="mdl-navigation__link" href="./stock.html">Stock</a>
-          <a class="mdl-navigation__link" href="./fos.html">Fos</a>
-          <a class="mdl-navigation__link" href="./Sell.html">Sell</a>
-          
-          <a class="mdl-navigation__link" href="./settings.html">Settings</a>
-          <a class="mdl-navigation__link" href="">Logout</a>
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link">DashBoard</a>
+                    <a class="mdl-navigation__link">Stock</a>
+                    <a class="mdl-navigation__link">Fos</a>
+                    <a class="mdl-navigation__link">Sell</a>
+                    <a class="mdl-navigation__link">Transactions</a>
+                    <a class="mdl-navigation__link">Reports</a>
+                    <a class="mdl-navigation__link">Settings</a>
+                    <a class="mdl-navigation__link">Logout</a>
 				</nav>
 			</div>
 		</header>
-		
 		<main class="mdl-layout__content mdl-color--grey-100">
 			<div class="mdl-grid">
 				<div class="mdl-cell mdl-cell--1-col">
@@ -35,158 +34,140 @@
 				<div class="mdl-cell mdl-cell--2-col">
 					<div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
 						<div class="left-navigation">	
-						   <p id="set-target" class="left-navigation-link">Set Target</p>
+						   <p id="info-card" class="left-navigation-link">User Info</p>
 						   <p id="add-parameters" class="left-navigation-link">Parameters</p>			      
 							<p id="add-fos" class="left-navigation-link">Fos</p>
-							<p id="add-account" class="left-navigation-link">Account</p>
+							<p id="set-target" class="left-navigation-link">Target</p>
 							<p class="left-navigation-link" href="">Other</p>
 						</div>
 					</div>
 				</div>
 				<div class="mdl-cell mdl-cell--9-col">
 					<div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+					   <div class="dashboard-card">
+							<div id="add-info-card">
+								<div class="card-top">
+									User Information
+									<div class="mdl-grid">
+										<div class="mdl-cell mdl-cell--6-col info-text">
+										<div>Name</div>
+										<div>Amount Paid</div>
+										<div>Credits</div>
+										<div>Referral code</div>
+										<div>Start date</div>
+										<div>End date</div>
+
+										</div>
+
+										<div class="mdl-cell mdl-cell--6-col info-text">
+										  <div>Demo account</div>
+										  <div>Rs 0</div>
+										  <div>Rs 0</div>
+										  <div>NWAwip</div>
+										  <div>8/1/2016</div>
+										  <div>7/2/2016</div>
+										</div>
+									</div>
+									<div>			
+										<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+										  make payment
+										</button>
+									</div>
+
+
+									</div>
+								</div>
+							</div>
 						<div class="mdl-grid">
 							<div class="dashboard-card">
 								<div id="add-parameters-card" style=" display: none;">
 									<div class="card-top">
 										Parameters
 									</div>
-									<div class="card-left">
-										<div class="add-parameters-cln">
-											<div class="add-parameters-cell">
-												<div class="text-top">
-													Name
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="text-top">
-													Value
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="text-top">
-													Cost Price
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="text-top">
-													Profit
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="text-top">
-													Fixed Parameter
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-											</div>
-										</div>
-										<div class="add-parameters-cln">
-											<div class="add-parameters-cell">
-												<div class="middle-grid">
-													<div class="text-middle">
-														Rc10
-													</div>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="middle-grid">
-													<div class="text-middle">
-														10
-													</div>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="middle-grid">
-													<div class="text-middle">
-														5
-													</div>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="middle-grid">
-													<div class="text-middle">
-														3.68%
-													</div>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="middle-grid">
-													<div class="check-box">
-														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-															<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
-
-														</label>
-													</div>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="middle-grid">
-													<div class="button-cell">
-														<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-															edit
-														</button>
-													</div>
-												</div>
-											</div>
-
-										</div>
-										<div class="add-parameters-cln">
-											<div class="add-parameters-cell">
-												<div class="mdl-textfield mdl-js-textfield">
-													<input class="mdl-textfield__input" type="text" id="sample1" />
-													<label class="mdl-textfield__label" for="sample1">Rc 10</label>
-												</div>
-
-											</div>
-											<div class="add-parameters-cell">
-												<div class="mdl-textfield mdl-js-textfield">
-													<input class="mdl-textfield__input" type="text" id="sample1" />
-													<label class="mdl-textfield__label" for="sample1">Text...</label>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="mdl-textfield mdl-js-textfield">
-													<input class="mdl-textfield__input" type="text" id="sample1" />
-													<label class="mdl-textfield__label" for="sample1">Text...</label>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="mdl-textfield mdl-js-textfield">
-													<input class="mdl-textfield__input" type="text" id="sample1" />
-													<label class="mdl-textfield__label" for="sample1">Text...</label>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="bottom-check-box">
-													<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-														<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked />
-
-													</label>
-												</div>
-											</div>
-											<div class="add-parameters-cell">
-												<div class="bottom-button">
-													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-														save
-													</button>
-													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-														delete
-													</button>
-												</div>
-											</div>
-										</div>
-
+									<div>
+									<div class="mdl-grid fos-top-text">
+									<div class="mdl-cell mdl-cell--4-col fos-left-text">
+								     Fos Name
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									Phone Number
+									</div>
+									</div>
+									<div class="mdl-grid">
+									<div class="mdl-cell mdl-cell--4-col fos-left-text">
+									Suharika
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									9876543210
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									<button id="timeline-menu1" class="mdl-button mdl-js-button timeline-button button-align">
+							           <i class="material-icons">more_vert</i>
+							         </button>
+							         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="timeline-menu1">
+							          <li class="mdl-menu__item">Edit</li>
+							          <li class="mdl-menu__item">Delete</li>
+							        </ul> 
+									</div>
+									</div>
+									<div class="mdl-grid">
+									<div class="mdl-cell mdl-cell--4-col fos-left-text">
+									Suharika
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									9876543210
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									<button id="timeline-menu2" class="mdl-button mdl-js-button timeline-button button-align">
+							           <i class="material-icons">more_vert</i>
+							         </button>
+							         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="timeline-menu2">
+							          <li class="mdl-menu__item">Edit</li>
+							          <li class="mdl-menu__item">Delete</li>
+							        </ul> 
+									</div>
+									</div>
+									<div class="mdl-grid">
+									<div class="mdl-cell mdl-cell--4-col fos-left-text">
+									Suharika
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									9876543210
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									<button id="timeline-menu3" class="mdl-button mdl-js-button timeline-button button-align">
+							           <i class="material-icons">more_vert</i>
+							         </button>
+							         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="timeline-menu3">
+							          <li class="mdl-menu__item">Edit</li>
+							          <li class="mdl-menu__item">Delete</li>
+							        </ul> 
+									</div>
+									</div>
+									<div class="mdl-grid">
+									<div class="mdl-cell mdl-cell--4-col fos-left-text">
+									Suharika
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									9876543210
+									</div>
+									<div class="mdl-cell mdl-cell--4-col fos-text">
+									<button id="timeline-menu4" class="mdl-button mdl-js-button timeline-button button-align">
+							           <i class="material-icons">more_vert</i>
+							         </button>
+							         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="timeline-menu4">
+							          <li class="mdl-menu__item">Edit</li>
+							          <li class="mdl-menu__item">Delete</li>
+							        </ul> 
+									</div>
+									</div>
 									</div>
 									<div class="fos-button">
-										<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 											add new parameter
-										</button>
+									</button>
 									</div>
-
 								</div>
-
-
 							</div>
 						</div>
 
@@ -212,9 +193,6 @@
 											<div class="create-parameters-cell">
 											</div>
 										</div>
-
-
-
 										<div class="create-parameters-cln">
 
 											<div class="create-parameters-cell">
@@ -235,7 +213,7 @@
 											<div class="create-parameters-cell">
 												<div class="middle-grid">
 													<div class="button-cell">
-														<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+														<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 															edit
 														</button>
 													</div>
@@ -261,10 +239,10 @@
 
 											<div class="create-parameters-cell">
 												<div class="bottom-button">
-													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 														save
 													</button>
-													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 														delete
 													</button>
 												</div>
@@ -272,113 +250,15 @@
 										</div>
 									</div>
 									<div class="fos-button">
-										<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+										<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 											add new fos
 										</button>
 									</div>
-
 								</div>
-
-
 							</div>
 						</div>
-
-						<div class="mdl-grid">
-							<div class="dashboard-card">
-								<div id="add-account-card"  style="display: none;">
-									<div class="card-top">
-										Account
-									</div>
-									<div class="fos-left">
-										<div class="create-parameters-cln">
-
-											<div class="create-parameters-cell">
-												<div class="text-top">
-													Fos Name
-												</div>
-											</div>
-											<div class="create-parameters-cell">
-												<div class="text-top">
-													Mobile Number
-												</div>
-											</div>
-											<div class="create-parameters-cell">
-											</div>
-										</div>
-
-
-
-										<div class="create-parameters-cln">
-
-											<div class="create-parameters-cell">
-												<div class="middle-grid">
-													<div class="text-middle">
-														Harika
-													</div>
-												</div>
-											</div>
-											<div class="create-parameters-cell">
-												<div class="middle-grid">
-													<div class="text-middle">
-														9030793138
-													</div>
-												</div>
-											</div>
-
-											<div class="create-parameters-cell">
-												<div class="middle-grid">
-													<div class="button-cell">
-														<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-															edit
-														</button>
-													</div>
-												</div>
-											</div>
-
-										</div>
-										<div class="create-parameters-cln">
-											<div class="create-parameters-cell">
-												<div class="mdl-textfield mdl-js-textfield">
-													<input class="mdl-textfield__input" type="text" id="sample1" />
-													<label class="mdl-textfield__label" for="sample1">Name</label>
-												</div>
-
-											</div>
-											<div class="create-parameters-cell">
-												<div class="mdl-textfield mdl-js-textfield">
-													<input class="mdl-textfield__input" type="text" id="sample1" />
-													<label class="mdl-textfield__label" for="sample1">Number</label>
-												</div>
-											</div>
-
-
-											<div class="create-parameters-cell">
-												<div class="bottom-button">
-													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-														save
-													</button>
-													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-														delete
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="fos-button">
-										<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-											add new account
-										</button>
-									</div>
-
-								</div>
-
-							</div>
-						</div>
-
 						<div class="dashboard-card">
-
-
-							<div id="target-card">
+							<div id="target-card"  style="display: none;">
 								<div class="card-top">
 									Targets
 									<div class="mdl-grid">
@@ -437,17 +317,12 @@
 														</label>
 													</div>
 												</div>
-											
-
-
 										</div>
 										<div class="target-button">
-											<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+											<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 												save target
 											</button>
 										</div>
-
-
 									</div>
 								</div>
 							</div>

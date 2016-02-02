@@ -16,11 +16,12 @@
 	display: block;
     padding: 26px 30px;
     margin: 0;
-    color: #272727;
+    color: rgba(73, 83, 88, 0.8);
     text-align: center;
     text-decoration: none;
     font-weight: 1000;
     font-size: 15px;
+    font-weight: bold;
 }
 .ddl-card
 {
@@ -40,9 +41,7 @@
 	font-size: 25px;
 	padding-top: 30px;
 	padding-bottom: 20px;
-	
-	
-
+	padding-right: 20px;
 }
 .icon-name
 {
@@ -235,5 +234,28 @@ body
 {
   background-color: #FBFBFB;
 }
-
-
+.info-text
+{
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(73, 83, 88, 0.8);
+    text-align: left;
+    padding-left: 20%;
+}
+.fos-top-text
+{
+	font-weight: bold;
+}
+.fos-text
+{
+	text-align: center;
+}
+.fos-left-text
+{
+	padding-left: 60px;
+}
+.mdl-navigation__link 
+{
+    font-weight: 600;
+}
