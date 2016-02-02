@@ -1,0 +1,86 @@
+#login-form {
+    margin: 20px;
+}
+
+.login-button {
+    float: right;
+}
+
+.other-button {
+    font-size: 12px;
+    float: left;
+    text-transform: none;
+}
+
+.login-form-card {
+    margin: 20px;
+    width: 380px;
+}
+
+.error {
+    background-color: #de3226;
+}
+
+.success {
+    background-color: green;
+}
+
+.login-text {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 8px;
+    padding-bottom: 20px;
+    font-weight: 550;
+    color: rgba(0, 0, 0, .74);
+}
+
+.login-form-error {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.login-form-error:empty {
+    display: none;
+}
+
+.login-form-error-text:empty {
+    display: none;
+}
+
+.login-form-error-text {
+    color: #fff;
+    font-weight: bold;
+    vertical-align: center;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+body {
+    background-color: #BDBDBD;
+}
+
+.center-align-outer-div {
+    width: 100%;
+    text-align: center;
+}
+
+.center-align-inner-div {
+    display: inline-block;
+}
+
+.mdl-checkbox {
+    text-align: left;
+}
+
+.check-box-form {
+    padding-left: 10px;
+}
+
+.img-logo {
+    height: 48px;
+}

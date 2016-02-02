@@ -1,0 +1,464 @@
+<html lang="en" class="mdl-js">
+<head>
+	<title>p2</title>
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">   
+	<link href="css/settings.css" rel="stylesheet">
+</head>
+<body class="body-color">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">Distribution App</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">      
+		  <a class="mdl-navigation__link" href="./dashBoard_new.html">DashBoard New</a>
+          <a class="mdl-navigation__link" href="./DashBoard.html">DashBoard Old</a> 
+          <a class="mdl-navigation__link" href="./stock.html">Stock</a>
+          <a class="mdl-navigation__link" href="./fos.html">Fos</a>
+          <a class="mdl-navigation__link" href="./Sell.html">Sell</a>
+          
+          <a class="mdl-navigation__link" href="./settings.html">Settings</a>
+          <a class="mdl-navigation__link" href="">Logout</a>
+				</nav>
+			</div>
+		</header>
+		
+		<main class="mdl-layout__content mdl-color--grey-100">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+				<div class="mdl-cell mdl-cell--2-col">
+					<div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+						<div class="left-navigation">	
+						   <p id="set-target" class="left-navigation-link">Set Target</p>
+						   <p id="add-parameters" class="left-navigation-link">Parameters</p>			      
+							<p id="add-fos" class="left-navigation-link">Fos</p>
+							<p id="add-account" class="left-navigation-link">Account</p>
+							<p class="left-navigation-link" href="">Other</p>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--9-col">
+					<div class="mdl-card mdl-shadow--2dp through mdl-shadow--2dp">
+						<div class="mdl-grid">
+							<div class="dashboard-card">
+								<div id="add-parameters-card" style=" display: none;">
+									<div class="card-top">
+										Parameters
+									</div>
+									<div class="card-left">
+										<div class="add-parameters-cln">
+											<div class="add-parameters-cell">
+												<div class="text-top">
+													Name
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="text-top">
+													Value
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="text-top">
+													Cost Price
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="text-top">
+													Profit
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="text-top">
+													Fixed Parameter
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+											</div>
+										</div>
+										<div class="add-parameters-cln">
+											<div class="add-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														Rc10
+													</div>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														10
+													</div>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														5
+													</div>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														3.68%
+													</div>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="middle-grid">
+													<div class="check-box">
+														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+															<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="middle-grid">
+													<div class="button-cell">
+														<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+															edit
+														</button>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="add-parameters-cln">
+											<div class="add-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Rc 10</label>
+												</div>
+
+											</div>
+											<div class="add-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Text...</label>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Text...</label>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Text...</label>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="bottom-check-box">
+													<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+														<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked />
+
+													</label>
+												</div>
+											</div>
+											<div class="add-parameters-cell">
+												<div class="bottom-button">
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+														save
+													</button>
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+														delete
+													</button>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="fos-button">
+										<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+											add new parameter
+										</button>
+									</div>
+
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="mdl-grid">
+							<div class="dashboard-card">
+								<div id="add-fos-card"   style="display: none;">
+									<div class="card-top">
+										Fos
+									</div>
+									<div class="fos-left">
+										<div class="create-parameters-cln">
+
+											<div class="create-parameters-cell">
+												<div class="text-top">
+													Fos Name
+												</div>
+											</div>
+											<div class="create-parameters-cell">
+												<div class="text-top">
+													Mobile Number
+												</div>
+											</div>
+											<div class="create-parameters-cell">
+											</div>
+										</div>
+
+
+
+										<div class="create-parameters-cln">
+
+											<div class="create-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														Harika
+													</div>
+												</div>
+											</div>
+											<div class="create-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														9030793138
+													</div>
+												</div>
+											</div>
+
+											<div class="create-parameters-cell">
+												<div class="middle-grid">
+													<div class="button-cell">
+														<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+															edit
+														</button>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="create-parameters-cln">
+											<div class="create-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Name</label>
+												</div>
+
+											</div>
+											<div class="create-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Number</label>
+												</div>
+											</div>
+
+
+											<div class="create-parameters-cell">
+												<div class="bottom-button">
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+														save
+													</button>
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+														delete
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="fos-button">
+										<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+											add new fos
+										</button>
+									</div>
+
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="mdl-grid">
+							<div class="dashboard-card">
+								<div id="add-account-card"  style="display: none;">
+									<div class="card-top">
+										Account
+									</div>
+									<div class="fos-left">
+										<div class="create-parameters-cln">
+
+											<div class="create-parameters-cell">
+												<div class="text-top">
+													Fos Name
+												</div>
+											</div>
+											<div class="create-parameters-cell">
+												<div class="text-top">
+													Mobile Number
+												</div>
+											</div>
+											<div class="create-parameters-cell">
+											</div>
+										</div>
+
+
+
+										<div class="create-parameters-cln">
+
+											<div class="create-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														Harika
+													</div>
+												</div>
+											</div>
+											<div class="create-parameters-cell">
+												<div class="middle-grid">
+													<div class="text-middle">
+														9030793138
+													</div>
+												</div>
+											</div>
+
+											<div class="create-parameters-cell">
+												<div class="middle-grid">
+													<div class="button-cell">
+														<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+															edit
+														</button>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="create-parameters-cln">
+											<div class="create-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Name</label>
+												</div>
+
+											</div>
+											<div class="create-parameters-cell">
+												<div class="mdl-textfield mdl-js-textfield">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">Number</label>
+												</div>
+											</div>
+
+
+											<div class="create-parameters-cell">
+												<div class="bottom-button">
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+														save
+													</button>
+													<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+														delete
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="fos-button">
+										<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+											add new account
+										</button>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<div class="dashboard-card">
+
+
+							<div id="target-card">
+								<div class="card-top">
+									Targets
+									<div class="mdl-grid">
+										<div class="mdl-cell mdl-cell--4-col">
+											<div  class="target-card-text">
+												Monthly Target
+											</div>
+										</div>
+
+										<div class="mdl-cell mdl-cell--8-col">
+											<div class="target-card-value">
+												<div class="mdl-textfield mdl-js-textfield ">
+													<input class="mdl-textfield__input" type="text" id="sample1" />
+													<label class="mdl-textfield__label" for="sample1">target</label>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div>
+									
+											<div class="target-text">
+												<div class="target-bottom-card-text">
+													Holidays
+												</div>
+												<div class="box-text">
+													<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-8">
+														<input type="checkbox" id="checkbox-8" class="mdl-checkbox__input"/>
+														<span class="mdl-checkbox__label">Sunday</span>
+													</label>
+
+													
+														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-9">
+															<input type="checkbox" id="checkbox-9" class="mdl-checkbox__input"/>
+															<span class="mdl-checkbox__label">Monday</span>
+														</label>
+														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-6">
+															<input type="checkbox" id="checkbox-6" class="mdl-checkbox__input"/>
+															<span class="mdl-checkbox__label">Tuesday</span>
+														</label>
+														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-7">
+															<input type="checkbox" id="checkbox-7" class="mdl-checkbox__input"/>
+															<span class="mdl-checkbox__label">Wednesday</span>
+														</label>
+														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+															<input type="checkbox" id="checkbox-3" class="mdl-checkbox__input"  />
+															<span class="mdl-checkbox__label">Thursday</span>
+														</label>
+														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+															<input type="checkbox" id="checkbox-4" class="mdl-checkbox__input"  />
+															<span class="mdl-checkbox__label">Friday</span>
+														</label>
+														<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-5">
+															<input type="checkbox" id="checkbox-5" class="mdl-checkbox__input"  />
+															<span class="mdl-checkbox__label">Saturday</span>
+														</label>
+													</div>
+												</div>
+											
+
+
+										</div>
+										<div class="target-button">
+											<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+												save target
+											</button>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	<script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+    </script>     
+	<script src="js/settings.js"></script>
+	</body>
+	</html>

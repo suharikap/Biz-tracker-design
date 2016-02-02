@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Biz Tracker-Login</title>
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title"><img class="img-logo" src="/public/img/logo.png"/></span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="page-content ">
+                <div class="center-align-outer-div">
+                    <div class="center-align-inner-div">
+                        <div class="login-form-card mdl-card mdl-shadow--2dp">
+                            <form action="/login" id="login-form" method="post">
+                                <section>
+                                    <div class="login-text"> Login </div>
+                                </section>
+                                <section>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-cell--12-col mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="email" name="email" autocomplete="on" required />
+                                        <label class="mdl-textfield__label" for="email">Email</label>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-cell--12-col mdl-textfield--floating-label ">
+                                        <input class="mdl-textfield__input" type="password" name="password" required pattern=".{6,}" title="Password should be atleast 6 charecters " />
+                                        <label class="mdl-textfield__label" for="password">Password</label>
+                                    </div>
+                                    <input type="hidden" value="A33dZDpxcyz8BQRK7QaA6LFV" name="client_key" />
+                                </section>
+                                <section>
+                                    <div class="check-box-form">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                            <input type="checkbox" name="is_permanent_login" id="checkbox-2" class="mdl-checkbox__input" checked />
+                                            <span class="mdl-checkbox__label">Remember me?</span>
+                                        </label>
+                                    </div>
+                                </section>
+                                <br/>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a href="/signup" class="other-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">SignUp</a>
+                                    <a href="/forgotpassword" class="other-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Forgot Password ?</a>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent login-button" type="submit">
+                                        Login
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+</body>
+</html>
