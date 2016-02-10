@@ -2,7 +2,8 @@
 
 Website Url : http://biztracker.in
 
-Worked as freelancler for developing the complete website of biztracker.This repo contains screenshots of all pages and code samples of 3 pages.
+Worked as freelancer for developing the complete website of http://biztracker.in .This repo contains screenshots of all pages and code samples of the website
+
 
 # Screenshots
 
