@@ -5,11 +5,13 @@
 .signup-button {
     float: right;
 }
+
 .login-button {
     font-size: 12px;
     float: left;
     text-transform: none;
 }
+
 .login-form-card {
     margin: 20px;
     width: 360px;
@@ -75,6 +77,7 @@ body {
 .center-align-inner-div {
     display: inline-block;
 }
+
 .img-logo {
     height: 48px;
 }
